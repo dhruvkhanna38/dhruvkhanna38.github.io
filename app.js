@@ -29,6 +29,7 @@ app.post("/users" , (req, res)=>{
     var subject = req.body.subject;
     var message = req.body.message;
     const newUser = {name, email, subject, message};
+    console.log(newUser);
     User.create(newUser , (err , newUser)=>{
         if(err){
             console.log(err);

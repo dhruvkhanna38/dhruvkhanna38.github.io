@@ -87,7 +87,7 @@
                     <h1>Hi, I am Dhruv Khanna</br>
                     A Full Stack Developer </h1>
                     <p class="lead">I Love to create beautiful and amazing Websites.</p>
-                    <a href="https://drive.google.com/file/d/1aEOKTINFHs8xXo_PTcvsyzULEWfpWuqw/view?usp=sharing" class="scroll goto-btn">Download Resume</a> <!-- Link to your portfolio section -->
+                    <a href="https://drive.google.com/file/d/1aEOKTINFHs8xXo_PTcvsyzULEWfpWuqw/view?usp=sharing" target="_blank" class="scroll goto-btn">Download Resume</a> <!-- Link to your portfolio section -->
                 </div><!-- End Input Your Home Content Here -->
             </div> <!-- end container -->
         </div><!-- End Overlay Color -->
@@ -194,49 +194,54 @@
 					     <div class="row">
                      <h3>Certifications</h3> 
 
-						      <div class="counter"> 
+						<div class="counter"> 
 
                           <div class="col-xs-6 facts"><!-- counter #1 -->
                             <div class="count-box"> 
-                                <i class="fa fa-mobile"></i>
+                                <i class="fa fa-code"></i>
                                 <br>
                                 <br>
-                                <div>
-                                 <a href="https://www.udemy.com/certificate/UC-edd4c17f-fb5e-470d-9ec6-47e4c1176acb/">Certificate</a>
-                                </div>
-                                <p class="small">Web Development</p>
+                                <p class="small">The Web Developer Bootcamp by Colt Steele</p>
+                                <a href="https://www.udemy.com/certificate/UC-72A9M826/" target="_blank">Certificate</a>
                             </div> 
                           </div><!-- end counter #1 -->
 
                           <div class="col-xs-6 facts"><!-- counter #2 -->
                             <div class="count-box">
-                              <i class="fa fa-user"></i>
-                              <h4 class="count">625</h4>
-                              <p class="small">Web Apps</p>
+                                <i class="fa fa-terminal"></i>
+                                <br>
+                                <br>
+                                <p class="small">The Complete Node.js Developer Course by Andrew Mead</p>
+                                <a href="https://www.udemy.com/certificate/UC-edd4c17f-fb5e-470d-9ec6-47e4c1176acb/" target="_blank">Certificate</a>
                             </div>
                           </div>
-						  </div>
+						</div>
 						  </div>
 						  <div class="row">	
-							<div class="counter"> 						  
-                          <div class="col-xs-6 facts"> <!-- counter #3 -->
+						<div class="counter"> 						  
+                          <div class="col-xs-6 facts"><!-- counter #2 -->
                             <div class="count-box">
-                              <i class="fa fa-arrows"></i>
-                              <h4 class="count">805</h4>
-                              <p class="small">UI Designs</p>
+                                <i class="fa fa-link"></i>
+                                <br>
+                                <br>
+                                <p class="small">Build a Blockchain & Cryptocurrency | Full-Stack Edition</p>
+                                <a href="https://www.udemy.com/certificate/UC-8d00487c-5f12-44c2-9d70-5fbde7c0d333/" target="_blank">Certificate</a>
                             </div>
                           </div>
 
-                          <div class="col-xs-6 facts"> <!-- counter #4 -->
-                            <div class="count-box">
-                              <i class="fa fa-download"></i>
-                              <h4 class="count">152</h4>
-                              <p class="small">Project</p>
-                            </div>
-                          </div>
- 
-                          </div>
-
+                          <div class="col-xs-6 facts"><!-- counter #2 -->
+                                <div class="count-box">
+                                    <i class="fa fa-file-code-o"></i>
+                                    <br>
+                                    <br>
+                                    <p></p>
+                                    <p class="small">Algorithms (Data Structures) Bootcamp in C++</p>
+                                    <br>
+                                    <p></p>
+                                    <a href="https://www.udemy.com/certificate/UC-1WRL27PW/" target="_blank">Certificate</a>
+                                </div>
+                           </div>
+                        </div>
                         </div>
 
 						 </div> 
@@ -596,50 +601,43 @@
                     </div> <!-- end nested row -->
                 </div> <!-- end col 10 with offset 1 to centered -->
             </div><!-- end outer row -->
+            <div class="col-sm-8 col-md-8">
+                <div class="contact-form">
+                    <div class="container">
+                        <form id="form" class="form" method="post" action="/users">
+                            <h2>Contact Me</h2>
 
-            <div class="row text-center"> <!-- contact form outer row with centered text-->
-                <div class="col-md-10 col-md-offset-1"> <!-- col 10 with offset 1 to centered -->
-                    <form id="contact-form" onsubmit="return validateForm()" class="form" name="sentMessage" method="post" action="/users" novalidate> <!-- form wrapper -->
-
-                        <div class="row"> <!-- nested inner row -->
-
-                            <!-- Input your name -->
+                        <div class="row">
                             <div class="col-md-4">
-                                <div class="form-group"> <!-- Your name input -->
-                                    <input type="text" name="name" autocomplete="off" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required />
+                                    <small></small>
                                 </div>
-                            </div>
-
-                            <!-- Input your email -->
-                            <div class="col-md-4">
-                                <div class="form-group"> <!-- Your email input -->
-                                    <input type="email" name="email" autocomplete="off" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" id="email" name="email" class="form-control" placeholder="Enter email" required/>
+                                    <small></small>
                                 </div>
-                            </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter Subject" required />
+                                    <small></small>
+                                  </div>
+                              </div>
+                        </div>
 
-                            <!-- Input your Subject -->
-                            <div class="col-md-4">
-                                <div class="form-group"> <!-- Your email input -->
-                                    <input type="text" name="subject" autocomplete="off" class="form-control" placeholder="Subject" id="subject" required data-validation-required-message="Please enter subject.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-
-                        </div><!-- end nested inner row -->
-
-                        <!-- Message Text area -->
                         <div class="form-group"> <!-- Your email input -->
-                            <textarea class="form-control" name="message" rows="7" placeholder="Tell Us Something..." id="message" required data-validation-required-message="Please enter a message."></textarea>
+                            <textarea class="form-control" rows="7" placeholder="Tell Us Something..." id="message" name="message" required></textarea>
                             <p class="help-block text-danger"></p>
                             <div id="success"></div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn color">Send Message</button> <!-- Send button -->
-
-                    </form><!-- end form wrapper -->
-                </div><!-- end col 10 with offset 1 to centered -->
-            </div> <!-- end contact form outer row with centered text-->
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                      </div>
+                </div>
+            </div>
 
         </div><!-- end container -->
 
@@ -656,8 +654,7 @@
                 <li><a href="#"><i class="fa fa-behance"></i></a></li> <!-- Change # With your Behance Link -->
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li> <!-- Change # With your LinkedIn Link --> 
             </ul>
-            <p class="pull-right"> © 2016 Site Name. All rights reserved. Template by : <a href="http://webthemez.com">webthemez</a></p> <!-- copyright text here-->
-           
+
         </div><!-- end container -->
     </section>
     
@@ -684,8 +681,8 @@
     <script type="text/javascript" src="/js/nivo-lightbox.min.js"></script>
 
     <!-- Contact page-->
-    <script type="text/javascript" src="/js/jqBootstrapValidation.js"></script>
     <script type="text/javascript" src="/js/contact.js"></script>
+    <script type="text/javascript" src="/js/jqBootstrapValidation.js"></script>
 
     <!-- Javascripts
     ================================================== -->
