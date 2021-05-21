@@ -22,6 +22,9 @@ app.get("/",  (req , res)=>{
     res.render("index");
 });
 
+app.get("/Thankyou", (req, res)=>{
+    res.render("thankyou");
+})
 
 app.post("/users" , (req, res)=>{
     var name = req.body.name;
@@ -36,20 +39,12 @@ app.post("/users" , (req, res)=>{
         }
         else{
             sendEnquiryEmail(name , email, subject, message);
+            res.redirect('/Thankyou')
         }
     });
 });
 
-app.get("/users/database" , (req, res)=>{
-    User.find({} , (err , users)=>{
-        if(err){
-            console.log(err);
-        }
-        else{
-            res.send(users);
-        }
-    });
-});
+
 
 app.listen(port, function(){
    console.log("The Website Server has Started on Port" , port);
