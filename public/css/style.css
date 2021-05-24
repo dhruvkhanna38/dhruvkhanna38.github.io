@@ -391,7 +391,7 @@ a.goto-btn {
 /* Intro Section */
 #intro {
   background-color: #38a5db;
-  padding: 5% 0;
+  padding-top: 5%;
   color: #ffffff;
   text-align: center;
 }
