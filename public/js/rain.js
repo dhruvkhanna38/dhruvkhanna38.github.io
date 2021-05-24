@@ -6,8 +6,8 @@ function setup() {
         window.innerWidth,
         window.innerHeight/2
     );
-    rain.parent("rain")
-    background(0);
+    rain.parent("rain");
+    rain.background(0);
     var x = 0;
     for (var i = 0; i <= width / symbolSize; i++) {
         var stream = new Stream();
@@ -21,13 +21,11 @@ function setup() {
 }
 
 function draw() {
-    background(0, 150);
+    background(56, 165, 219);
     // render multiple streams
     streams.forEach(function(stream) {
         stream.render();
     });
-
-
 }
 
 function Symbol(x, y, speed, first) {
@@ -98,9 +96,9 @@ function Stream() {
         //add anonymous symbol in for each loop 
         this.symbols.forEach(function(symbol) {
             if (symbol.first) {
-                fill(255, 255, 255);
+                fill(0, 0, 0);
             } else {
-                fill(56, 165, 219);
+                fill(255, 255, 255);
             }
             text(symbol.value, symbol.x, symbol.y);
             symbol.rain();
