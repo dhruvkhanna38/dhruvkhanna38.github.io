@@ -11,14 +11,14 @@
   "license": "ISC",
   "devDependencies": {
     "env-cmd": "^10.1.0",
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.19"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.0.1",
     "body-parser": "^1.19.0",
-    "ejs": "^3.0.2",
+    "ejs": "^3.1.8",
     "express": "^4.17.1",
     "mongoose": "^5.9.9",
-    "validator": "^13.0.0"
+    "validator": "^13.7.0"
   }
 }
