@@ -21,7 +21,7 @@ function setup() {
 }
 
 function draw() {
-    background(56, 165, 219);
+    background(76, 44, 133);
     // render multiple streams
     streams.forEach(function(stream) {
         stream.render();
@@ -74,7 +74,7 @@ function Symbol(x, y, speed, first) {
 function Stream() {
     this.symbols = []
     this.totalSymbols = round(random(5, 30));
-    this.speed = 5;
+    this.speed = 3;
 
 
     this.generateSymbols = function(x, y) {

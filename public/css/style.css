@@ -49,7 +49,7 @@ a:focus {
   color: #ffcc33;
 }
 .highlight {
-  color: #38a5db;
+  color: #4c2c85;
 }
 .clearfix:after {
   visibility: hidden;
@@ -71,7 +71,7 @@ a:focus {
 /* Navigation */
 #menu {
   margin-bottom: 0;
-  background-color: #38a5db;
+  background-color: #4c2c85;
   padding: 10px 0;
   height: auto;
   border: 0px;
@@ -218,7 +218,7 @@ a.goto-btn {
 }
 a.goto-btn:hover {
   color: #feffff;
-  border-bottom: 2px solid #38a5db;
+  border-bottom: 2px solid #4c2c85;
 }
 /* Home Section Style 2 - With Video*/
 #home.video .overlay {
@@ -295,7 +295,7 @@ a.goto-btn:hover {
   width: 14px;
   height: 14px;
   margin: 0;
-  background-color: #38a5db;
+  background-color: #4c2c85;
 }
 .carousel-fade .carousel-inner .item {
   opacity: 0;
@@ -390,7 +390,7 @@ a.goto-btn {
 }
 /* Intro Section */
 #intro {
-  background-color: #38a5db;
+  background-color: #4c2c85;
   padding-top: 5%;
   color: #ffffff;
   text-align: center;
@@ -495,7 +495,7 @@ h4.media-heading {
 }
 /* About Us */
 #about {
-  background: #38a5db;
+  background: #4c2c85;
   color: #fff;
   padding: 80px 0;
 }
@@ -757,7 +757,7 @@ ul.social li a.fa:hover {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #38a5db;
+  background-color: #4c2c85;
   padding: 25px;
 }
 .nav-pills > li > a {
@@ -781,14 +781,14 @@ ul.cat {
 }
 ul.cat li a {
   background: inherit;
-  border: 1px solid #38a5db;
+  border: 1px solid #4c2c85;
   padding: 10px 16px;
 }
 ul.cat li a:hover,
 ul.cat li a:focus,
 ul.cat li a.active {
-  background: #38a5db;
-  border: 1px solid #38a5db;
+  background: #4c2c85;
+  border: 1px solid #4c2c85;
   padding: 10px 16px;
   border-radius: 0;
   color: #fff;
@@ -820,7 +820,7 @@ ul.cat li a.active {
 }
 .box .hover-text i.fa {
   font-size: 20px;
-  background: #38a5db;
+  background: #4c2c85;
   padding: 13px;
   position: relative;
   top: 40%;
@@ -1116,7 +1116,7 @@ ul.cat li a.active {
   word-spacing: 2px;
   font-weight: 700;
   padding: 10px 20px;
-  background-color: #38a5db;
+  background-color: #4c2c85;
   text-transform: uppercase;
   border-color: #333333;
   transition: all 0.5s;
@@ -1130,13 +1130,13 @@ ul.cat li a.active {
   border-color: #ffcc33;
 }
 .color {
-  background-color: #38a5db;
-  border-color: #38a5db;
+  background-color: #4c2c85;
+  border-color: #4c2c85;
 }
 .color:focus,
 .color:hover {
   border-color: #333333;
-  background-color: #38a5db;
+  background-color: #4c2c85;
 }
 /* Blog Section */
 #blog,
@@ -1175,7 +1175,7 @@ ul.metas li:last-child:after {
   content: ' ';
 }
 ul.metas li a {
-  color: #38a5db;
+  color: #4c2c85;
 }
 .meta-detail {
   background: #f4f4f4;
