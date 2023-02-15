@@ -1,14 +1,9 @@
 var express     = require("express"),
     app         = express(),
-    bodyParser  = require("body-parser"),
-    mongoose    = require("mongoose");
-const User = require("./models/user");
-const {sendEnquiryEmail} =  require("./emails/account");
+    bodyParser  = require("body-parser")
 
-const MONGODB_URL = process.env.MONGODB_URL;
 
-mongoose.connect(MONGODB_URL , {useNewUrlParser : true ,
-                                useUnifiedTopology: true});
+
 
 
 const port = process.env.PORT;
@@ -25,25 +20,6 @@ app.get("/",  (req , res)=>{
 app.get("/Thankyou", (req, res)=>{
     res.render("thankyou");
 })
-
-app.post("/users" , (req, res)=>{
-    var name = req.body.name;
-    var email = req.body.email;
-    var subject = req.body.subject;
-    var message = req.body.message;
-    const newUser = {name, email, subject, message};
-    console.log(newUser);
-    User.create(newUser , (err , newUser)=>{
-        if(err){
-            console.log(err);
-        }
-        else{
-            sendEnquiryEmail(name , email, subject, message);
-            res.redirect('/Thankyou')
-        }
-    });
-});
-
 
 
 app.listen(port, function(){
