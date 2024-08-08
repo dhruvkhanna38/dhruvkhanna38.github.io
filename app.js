@@ -21,6 +21,11 @@ app.get("/Thankyou", (req, res)=>{
     res.render("thankyou");
 })
 
+// Serve ads.txt file
+app.get('/ads.txt', (req, res) => {
+    res.sendFile(path.join(__dirname, 'ads.txt'));
+});
+
 
 app.listen(port, function(){
    console.log("The Website Server has Started on Port" , port);
