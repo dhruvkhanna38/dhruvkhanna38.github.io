@@ -23,7 +23,7 @@ app.get("/Thankyou", (req, res)=>{
 
 // Serve ads.txt file
 app.get('/ads.txt', (req, res) => {
-    res.sendFile(path.join(__dirname, 'ads.txt'));
+    res.sendFile(__dirname, 'ads.txt');
 });
 
 
