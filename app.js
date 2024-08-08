@@ -2,6 +2,9 @@ var express     = require("express"),
     app         = express(),
     bodyParser  = require("body-parser")
 
+const path = require('path'); // Add this line to require the path module
+
+
 
 
 
@@ -23,7 +26,7 @@ app.get("/Thankyou", (req, res)=>{
 
 // Serve ads.txt file
 app.get('/ads.txt', (req, res) => {
-    res.sendFile(__dirname, 'ads.txt');
+    res.sendFile(path.join(__dirname, 'ads.txt'));
 });
 
 
